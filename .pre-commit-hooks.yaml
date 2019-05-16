@@ -1,0 +1,6 @@
+- id: no-walruses
+  name: no-walruses
+  description: Warn about assignment expressions (pep572)
+  entry: ":="
+  language: pygrep
+  types: [python]

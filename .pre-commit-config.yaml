@@ -1,0 +1,4 @@
+repos:
+  - repo: https://github.com/gyermolenko/pre-commit-hooks
+    hooks:
+      - id: no-walruses
