@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/gyermolenko/pre-commit-hooks
-    rev: d9b0ebdd772b76025ccefe8e7649ce24d29eafb2
+    rev: 34f2e54609272149466e00d54c8bbd0c4b2782fb
     hooks:
       - id: walrus-grep
       # - id: walrus-ast
