@@ -1,0 +1,2 @@
+# not .py file with walrus
+text := "file"

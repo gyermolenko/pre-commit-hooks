@@ -1,0 +1,9 @@
+repos:
+  - repo: https://github.com/gyermolenko/pre-commit-hooks
+    rev: d9b0ebdd772b76025ccefe8e7649ce24d29eafb2
+    hooks:
+      - id: walrus-grep
+      # - id: walrus-ast
+        # language_version: python3.8
+      - id: walrus-opportunity
+        language_version: python3.7
