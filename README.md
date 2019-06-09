@@ -6,6 +6,10 @@
 - copy `pre-commit-hooks/.pre-commit-config.yaml` into
 - experiment adding files from `input` folder to git staged and running trying to make commit
 
+Example results
+
+![Results](checks-2019-06-09.png)
+
 ## Developing new hooks
 
 - `git init` (from any empty folder next to cloned `pre-commit-hooks`)
