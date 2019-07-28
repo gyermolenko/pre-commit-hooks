@@ -2,14 +2,6 @@ import argparse
 import ast
 
 
-class NamedExprVisitor(ast.NodeVisitor):
-    def __init__(self):
-        self.lineno = None
-
-    def visit_NamedExpr(self, node):
-        self.lineno = node.lineno
-
-
 def check(filename):
     with open(filename) as f:
         contents = f.read()
@@ -20,9 +12,9 @@ def check(filename):
         print('SyntaxError, continue')
         return
 
-    visitor = NamedExprVisitor()
-    visitor.visit(tree)
-    return visitor.lineno
+    for node in ast.walk(tree):
+        if isinstance(node, ast.NamedExpr):
+            return node.lineno
 
 
 def main():

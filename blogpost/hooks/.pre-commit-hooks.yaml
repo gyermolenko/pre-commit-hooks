@@ -1,20 +1,20 @@
 - id: walrus-grep
   name: walrus-grep
-  description: Warn about assignment expressions (pep572)
+  description: Warn about assignment expressions
   entry: ":="
   language: pygrep
   types: [python]
 
 - id: walrus-ast
   name: walrus-ast
-  description: Warn about assignment expressions (pep572)
+  description: Warn about assignment expressions
   entry: walrus-ast
   language: python
   types: [python]
-
+  
 - id: walrus-opportunity
   name: walrus-opportunity
-  description: Warn about missed opportunity to use ":="
+  description: Warn if you could have used ":=" somewhere
   entry: walrus-opportunity
   language: python
   types: [python]
